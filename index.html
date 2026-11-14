@@ -10,6 +10,7 @@
 @media(max-width:700px){.shell{padding:0 14px}.head-row{height:65px;gap:9px}.brand-mark{width:35px;height:35px}.brand-mark svg{width:23px}.brand-name{font-size:13px}.brand-name span{font-size:8px}.desktop-nav,.save-indicator{display:none}.head-right{margin-left:auto}.hamburger{display:inline-flex}.mobile-nav{display:flex;overflow:auto;gap:3px;border-top:1px solid #293448;padding:5px 14px}.mobile-nav .nav-btn{white-space:nowrap;font-size:12px}.main{padding-top:17px}.hero{padding:22px;border-radius:18px}.hero-layout{grid-template-columns:1fr}.hero-card{display:flex;gap:18px;align-items:center;padding:13px 15px}.hero-card .hero-big{font-size:31px}.hero-card .progress-track{width:130px;margin:4px 0}.hero-card .tiny{font-size:10px}.hero h1{font-size:30px}.controlbar{grid-template-columns:1fr;gap:11px;padding:15px}.controlbar .extra{grid-column:auto}.cards,.layout-two,.dungeon-grid,.farm-grid,.info-grid{grid-template-columns:1fr}.panel-title{align-items:start}.panel-title h2,.build-overview h2{font-size:20px}.search{min-width:100%}.glass{padding:15px}.section-hero{align-items:start;flex-direction:column}.tabs{margin-top:18px}.tab{padding:11px 12px}.footer{padding-bottom:90px}.talent-row{gap:5px}.talent{min-height:60px;font-size:10px}}
 </style>
 <link rel="stylesheet" href="./assets/features.css">
+<link rel="stylesheet" href="./assets/professions.css">
 </head>
 <body><div class="app">
 <header class="header"><div class="shell"><div class="head-row"><a class="brand" href="#" id="brandHome"><div class="brand-mark"><svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25 3 30.5 20 47 25 30.5 30.5 25 47 19.5 30.5 3 25 19.5 20Z" stroke="currentColor" stroke-width="2"/><path d="m25 12 5 13-5 13-5-13Z" fill="currentColor"/><circle cx="25" cy="25" r="5" fill="#121b2a" stroke="currentColor"/></svg></div><div class="brand-name">AZEROTH ATLAS<span>FOREVER COMPANION</span></div></a><nav class="desktop-nav" id="desktopNav"></nav><div class="head-right"><span class="save-indicator">● Lokal gespeichert</span><button class="ghost-button hamburger" id="menuBtn" aria-label="Menü">☰</button></div></div><nav class="mobile-nav" id="mobileNav"></nav></div></header>
@@ -199,6 +200,7 @@ initializeOfflineSnapshot();
 if(location.hash.startsWith('#build=')){const params=new URLSearchParams(location.hash.slice(1));const id=params.get('build'),b=BUILDS.find(x=>x.id===id);if(b){state.buildId=id;state.classId=b.classId}const lev=Number(params.get('level'));if(lev>=1&&lev<=60)state.level=lev}
 bind();render();loadLiveData();
 </script>
+<script src="./assets/professions-data.js"></script>
 <script src="./assets/features.js"></script>
 </body>
 </html>
