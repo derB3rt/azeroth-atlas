@@ -61,3 +61,12 @@ Validated in headless Chromium on 2026-11-14 with offline resources and an isola
 6. Mobile viewport 390px renders map without document-wide horizontal overflow.
 
 These are browser smoke tests, not a full in-game verification of WoW Forever drops, skills, or hotfixes.
+
+## Neues Modul · Berufe-Levelguide (2.1)
+
+Der Tab **Berufe** enthält kuratierte Forever-Levelrouten für **Schneiderei, Verzauberkunst, Alchemie, Schmiedekunst, Ingenieurskunst, Lederverarbeitung, Erste Hilfe und Kochkunst** (Skill 1–300) mit geschätzten Herstellungszahlen, Materialbedarf pro Rezept, Freischalt-Hinweisen und den Originalquellen. Zusätzliche Einstiegshinweise: Bergbau, Kräuterkunde, Kürschnerei und Angeln.
+
+- Skill, Zielskill, pro Rezept bereits hergestellte Stückzahl und vorhandene Materialien werden **pro Charakter und Beruf** in `azeroth-atlas-companion-v2` lokal gesichert. Das bestehende JSON-Backup nimmt sie mit.
+- Die Einkaufsliste verrechnet automatisch bekannte selbstgefertigte Vorprodukte wie Stoffballen. Bei anderen Vorprodukten (Runenstäbe, Copper Bolts, Schleifsteine) ist die Eigenherstellung **nicht vollständig aufgelöst**; beachte die Rezept-Hinweise und prüfe den Bestand.
+- **Craft-Zahlen sind Planwerte, keine Garantien.** Gelbe und grüne Skill-Ups haben eine Chance; der Skill muss manuell nachgeführt werden. Goldpreise sind nicht berücksichtigt. Wenn du mitten in der Route beginnst, solltest du bereits vorhandene Stoffballen und Komponenten im Inventar eintragen.
+- Primärquelle für sechs Herstellungsberufe: [Classic WoW Forever Profession Leveling](https://classicwowforever.com/professions/) aus Forever-Client **1.60.1.70634 (27.10.2026)**. Erste Hilfe: [Warcraft Forever Wiki](https://www.warcraftforever.wiki/wiki/First_Aid) (älterer Beta-Client). Kochkunst: [AllThingsHow](https://allthings.how/wow-forever-cooking-leveling/) (08.11.2026). Für aktuelle Client-Routen sind in der App zusätzliche Links zu [METAMMO](https://metammo.com/wow-forever/professions) (Live-Client **1.60.1.70938**, 13.11.2026) hinterlegt. Die Snapshot-Pläne werden **nicht** automatisch aus der externen Website synchronisiert; Hotfixes können Angaben ändern.
