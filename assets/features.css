@@ -17,3 +17,58 @@
 @media(max-width:700px){.atlas-grid,.atlas-grid.two,.atlas-grid.four,.atlas-compare,.atlas-form{grid-template-columns:1fr}.atlas-card{padding:14px}.atlas-map-board{height:360px}.atlas-line{flex-direction:column}.atlas-row-actions{justify-content:flex-start}.atlas-form{gap:11px}.atlas-actions{flex-wrap:wrap}.atlas-btn{min-height:37px}.atlas-map-point{min-width:30px;min-height:30px}.atlas-map-wrap{gap:10px}}
 
 @media(max-width:700px){#section-map .atlas-form{grid-template-columns:1fr!important}}
+
+/* Responsive multi-row section navigation for portrait and desktop displays. */
+@media (min-width:701px) {
+  #tabs.tabs {
+    display:grid;
+    grid-template-columns:repeat(7,minmax(0,1fr));
+    gap:9px;
+    overflow:visible;
+    white-space:normal;
+    scroll-snap-type:none;
+    margin:22px 0 25px;
+    padding:12px;
+    background:linear-gradient(155deg,#172337,#111927);
+    border:1px solid #34445b;
+    border-radius:17px;
+    box-shadow:0 12px 30px #03081340;
+  }
+  #tabs .tab {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex:initial;
+    min-width:0;
+    min-height:47px;
+    padding:10px 9px;
+    background:#1a2940;
+    border:1px solid #364862;
+    border-radius:11px;
+    white-space:normal;
+    text-align:center;
+    font-size:13px;
+    font-weight:750;
+    line-height:1.25;
+    color:#c5d4e6;
+    scroll-snap-align:none;
+    transition:background-color .15s,border-color .15s,color .15s;
+  }
+  #tabs .tab:hover {background:#283e56;border-color:#71859e;color:#fff}
+  #tabs .tab.active {
+    color:#f8db9d;
+    background:linear-gradient(135deg,#403522,#27303a);
+    border-color:#dab271;
+    box-shadow:inset 0 0 0 1px #eac68b2b,0 3px 12px #0004;
+  }
+  #tabs .tab:focus-visible {outline:2px solid var(--gold);outline-offset:2px}
+}
+@media (min-width:701px) and (max-width:1400px) {
+  #tabs.tabs {grid-template-columns:repeat(5,minmax(0,1fr))}
+}
+@media (min-width:701px) and (max-width:940px) {
+  #tabs.tabs {grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media (min-width:701px) and (max-width:780px) {
+  #tabs.tabs {grid-template-columns:repeat(3,minmax(0,1fr))}
+}
